@@ -1,0 +1,65 @@
+
+form input {
+	width: 145px;
+	display: inline-block;
+}
+
+form textarea {
+	display: inline-block;
+	width: 495px;
+	margin-top: 12px;
+}
+
+form button {
+	width: 150px;
+	border-radius: 5px;
+	margin-left: 510px;
+	margin-top: 20px;
+	height: 60px;
+	font-family: Mr_Sunshine_2;
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+.titre {
+	background-color: RGBa(0, 0, 0, 0.3);	
+}
+
+.titre_commentaire {
+	background-color: RGBa(0, 0, 0, 0.05);	
+}
+
+.titre, .titre_commentaire {
+	width: 760px;
+	height: 50px;
+	margin-left: -50px;
+}
+
+.identifiant, .identifiant_commentaire {
+	width: 148px;
+	height: 35px;
+	display: inline-block;
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 50px;
+	padding-top: 15px;
+	border-right: 2px solid black;
+	border-left: 2px solid RGBa(0, 0, 0, 0.3);
+}
+
+.commentaire {
+	margin-left: -15px;	
+}
+
+.commentaire_commentaire {
+	margin-left: -11px;
+}
+
+.commentaire, .commentaire_commentaire {
+	width: 510px;
+	height: 35px;
+	display: inline-block;
+	text-align: center;
+	padding-top: 15px;
+	border-right: 2px solid RGBa(0, 0, 0, 0.3);
+}

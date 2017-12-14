@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SLG : Fan Club</title>
+		<link rel="stylesheet" href="style_fanclub.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div id="reseaux_nav">
+				<p>Suivez-moi !</p>
+				<a class="reseaux" id="youtube" href="https://www.youtube.com/user/Salutlesgeeks">Youtube</a>
+				<a class="reseaux" id="facebook" href="https://www.facebook.com/SalutlesGeeks/">Facebook</a>
+				<a class="reseaux" id="twitter" href="https://twitter.com/Mathieu_Sommet">Twitter</a>
+				<a class="reseaux" id="instagram" href="https://www.instagram.com/mathieuslg/">Instagram</a>
+			</div>
+			<div id="back-left1"></div>
+			<div id="back-right1"></div>
+			<div id="front1">
+				<h1 id="titre">Salut les Geeks</h1>
+			</div>	
+			<nav>
+				<div id="back-left2"></div>
+				<div id="back-right2"></div>
+				<div id="front2">
+					<a class="liens" href="index.html">Accueil</a>
+					<a class="liens" href="biographie.html">Biographie</a>
+					<a class="liens" href="personnages.html">Personnages</a>
+					<a class="liens" href="galerie.html">Galerie</a>
+					<a class="liens" href="fanclub.html">Fan Club</a>
+					<a class="liens" href="commentaires.html">Commentaires</a>
+				</div>
+				<div id="triangle-left2"></div>
+				<div id="triangle-right2"></div>
+			</nav>
+		</header>
+		<div id="page">
+			<h1> Formulaire d'inscription</h1>
+			<form action="inscription" method="post">
+				<article class="categorie">
+					<h2>A propos de vous</h2>
+					<div id="prenom">
+						<p>Prénom :</p>
+						<input type="text" name="prenom" value="" />
+					</div>
+					<div id="nom">
+						<p>Nom :</p>
+						<input type="text" name="nom" value="" />
+					</div>
+					<div id="sexe">
+						<p>Sexe:</p>
+						<select name="profil">
+							<option value="masc">Masculin</option>
+							<option value="fem">Féminin</option>
+							<option value="nul">Anonyme</option>
+						</select>
+					</div>
+				</article>
+				
+				<article class="categorie">
+					<h2>Informations</h2>				
+					<div id="email">
+						<p>Email:</p>
+						<input type="email" maxlength="40" />
+					</div>
+					<div id="mdp">
+						<p>Mot de passe:
+						<input type="password" maxlength="20">
+					</div>
+					<div id="cmdp">
+						<p>Confirmation :</p>
+						<input type="password" maxlength="20">
+					</div>
+				</article>
+				
+				<article class="categorie">
+					<h2>Autre</h2>		
+					<div id="id">
+						<p>Pseudonyme:</p>
+						<input type="text" name="pseudo" value="" />
+					</div>
+				</article>
+				
+				<article id="bouton">
+					<input type="submit" value="Envoyer" /> 
+					<input type="reset" value="Annuler" />
+				</article>
+			</form>
+		</div>
+		<footer>
+			<div id="back-left3"></div>
+			<div id="back-right3"></div>
+			<div id="front3">
+				<p id="copyright">Copyright Leroux Florian - Germain Brice</p>
+			</div>
+			<div id="triangle-left3"></div>
+			<div id="triangle-right3"></div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SLG : Personnages</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript">
+			function spoiler() {
+				if(document.getElementById('spoiler') .style.display=='none') {
+					document.getElementById('spoiler') .style.display=''
+					}
+				else {
+					document.getElementById('spoiler') .style.display='none'
+					}
+			}
+			
+			function lecture(titre) {
+				document.getElementById("lecteur_audio").innerHTML = "<audio id='lecteur' src='musiques/" + titre + ".mp3' controls autoplay></audio>";
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav id="reseaux_nav">
+				<p>Suivez-moi !</p>
+				<a class="reseaux" id="youtube" href="https://www.youtube.com/user/Salutlesgeeks">Youtube</a>
+				<a class="reseaux" id="facebook" href="https://www.facebook.com/SalutlesGeeks/">Facebook</a>
+				<a class="reseaux" id="twitter" href="https://twitter.com/Mathieu_Sommet">Twitter</a>
+				<a class="reseaux" id="instagram" href="https://www.instagram.com/mathieuslg/">Instagram</a>
+			</nav>
+			<div id="back-left1"></div>
+			<div id="back-right1"></div>
+			<div id="back-left2"></div>
+			<div id="back-right2"></div>
+			<div id="front1">
+				<h1 class="titre">Salut les Geeks</h1>
+			</div>	
+			<nav>
+				<div id="triangle-left2"></div>
+				<div id="triangle-right2"></div>
+				<div id="front2">
+					<a class="liens" href="index.html">Accueil</a>
+					<a class="liens" href="biographie.html">Biographie</a>
+					<a class="liens" href="personnages.html">Personnages</a>
+					<a class="liens" href="galerie.html">Galerie</a>
+					<a class="liens" href="fanclub.html">Fan Club</a>
+					<a class="liens" href="commentaires.html">Commentaires</a>
+				</div>
+			</nav>
+		</header>
+		<section id="page">
+			<h1>Personnages</h1>
+			<article>
+				<a href="images/personnages/hippie.jpg" target="_blank"><img class="image1" src="images/personnages/hippie.jpg" alt="hippie"></a>
+				<p><strong>Le Hippie :</strong> un pacifiste constamment sous 
+				l’influence de substances illicites apporte un 
+				côté drôle et décalée à la critique du présentateur.</p>
+			</article>
+			<article>
+				<a href="images/personnages/patron.png" target="_blank"><img class="image2" src="images/personnages/patron.png" alt="patron"></a>
+				<p><strong>Le Patron :</strong> un pervers corrompu sexuellement, dangereux et dépourvu de toute morale, 
+				c'est le côté pervers de tout homme il intervient à chaque occasion pour y placer une allusion sexuel.</p>
+			</article>
+			<article>		
+				<a href="images/personnages/geek.jpg" target="_blank"><img class="image1" src="images/personnages/geek.jpg" alt="geek">	</a>			
+				<p><strong>Le Geek :</strong> un fan de jeux-vidéos maladroit et timoré, souvent martyrisé par les 
+				autres personnages autant dire le gros cliché du geek qu'il montre à son paroxysme.</p>
+			</article>
+			<article>			
+				<a href="images/personnages/panda.jpg" target="_blank"><img class="image2" src="images/personnages/panda.jpg" alt="panda"></a>			
+				<p><strong>Maître Panda :</strong> un panda qui chante à chaque fin d’épisode depuis la saison 4. C'est 
+				une façon de récapituler un vidéo qu'il a précédemment traité en musique tout en interagissant avec le 
+				public qui choisi de quelle vidéo l'instant panda va traité.</p>
+				<div id="spoiler" style="display:none">
+					<h2>Titres des instants Panda :</h2>
+					<script type="text/javascript">
+						var titre = ["2100", 
+									"-12 ans", 
+									"Attentat à la poubelle",
+									"Boire de l'urine",
+									"Caca",
+									"Chasse",
+									"Communisme",
+									"Elixir de vie",
+									"Hentai man",
+									"Hotel anus",
+									"Je fais peur",
+									"La violence",
+									"Les libdups",
+									"Nazi",
+									"On est les infidèles",
+									"PANDA",
+									"Le panda revient fou",
+									"Raptor Jesus",
+									"Rhubarbe",
+									"Youtube"];
+						var i = 0;
+						var j = 1;
+						while (i != titre.length) {
+							document.write("<button class='bouton_lecteur' type='button' onClick='javascript:lecture(" + j + ")'>" + titre[i] +"</button>");
+							i = i + 1;
+							j = j + 1;
+						}
+					</script>
+					<div id="lecteur_audio"></div>
+				</div>
+				<button id="spoiler_bouton" title="spoiler" type="button" onclick="javascript:spoiler()">Instant Panda</button>
+					
+				
+				
+			</article>
+			<article>				
+				<p><strong>Le Présentateur :</strong> c'est donc la vrai personne de Mathieu Sommet sans aucun costume 
+				ou autre personnalité. Dans l'émission il a un rôle de père de famille il essai de gérer toute sa petite
+				troupe en étant le plus sérieux de tous. Mais en réalité c'est de lui que provient toute ses personnalité
+				donc c'est en faites le plus fou.</p>
+			</article>
+			<article>
+					<a href="images/personnages/jeanne.jpg" target="_blank"><img class="image1" src="images/personnages/jeanne.jpg" alt="jeanne"></a>
+					<p><strong>Jeanne :</strong> depuis la saison 6 ce nouveau personnage est apparu. Il est différent
+					des autres car il n'est pas un doublure de Mathieu Sommet incarné par lui même mais une intelligence
+					artificielle qui l'épaule dans sa création tout au long des épisodes. En donnant son avis décalé vu
+					d'une machine qui évolue au fur et à mesure des épisodes.</p>
+			</article>
+		</section>
+		<footer>
+			<div id="back4"></div>
+			<div id="back-left3"></div>
+			<div id="back-right3"></div>
+			<div id="front3">
+				<p id="copyright">Copyright Leroux Florian - Germain Brice</p>
+			</div>
+			<div id="triangle-left3"></div>
+			<div id="triangle-right3"></div>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,396 @@
+@font-face {
+	font-family: 'Mr_Sunshine_2';
+	src: url('Mr_Sunshine_2.ttf');
+}
+
+html {
+	padding: 0;
+	margin: 0;	
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	color: black;
+	background-image: url(images/background.png);
+	overflow-x: hidden;
+}
+
+header {
+	position: fixed;
+	transform: translateY(-100px);
+	transition: all 1s ease;
+	left: 50%;
+}
+
+header:hover {
+	transform: translateY(0px);
+}
+
+article {
+	display: block;
+	margin: 50px;
+	background-color: RGBa(255, 255, 255, 0.5);
+	text-align: justify;
+	border-radius: 20px;
+	padding: 50px;
+}
+
+article p {
+	display: inline;
+}
+
+article img {
+	max-width: 200px;
+	max-height: 200px;
+	border: 1px solid black;
+	margin-top: -50px;
+}
+
+article .image1 {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 30px;	
+}
+
+article .image2 {
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 30px;	
+}
+
+#page {
+	width:860px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	padding-top: 45px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 50px;
+	background-color: RGBa(255, 255, 255, 0.6);
+	box-shadow: 0px 0px 16px black;
+}
+
+#page p {
+	font-family: Mr_Sunshine_2;
+	font-size: 1.5em;
+	margin-left: 30px;
+	margin-right: 30px;
+	text-align: justify;
+}
+
+#page h1 {
+	font-family: Mr_Sunshine_2;
+	font-size: 80px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#front1 {
+	position: fixed;
+	top: 0;
+	left: 50%;
+	margin-left: -475px;
+	height: 100px;
+	width: 950px;
+	background-color: white;
+	box-shadow: 0px 8px 8px black;
+}
+
+#front1 h1{
+	position: fixed;
+	font-family: Mr_Sunshine_2;
+	font-size: 100px;
+	width: 500px;
+	top: -60px;
+	left: 50%;
+	padding-left: auto;
+	padding-right: auto;
+	margin-left: -250px;
+}
+
+#back1 {
+	width: 500px;
+	background-color: white;
+	height: 100px;
+}
+
+#back-left1 {
+	position: fixed;
+	width: 1000px;
+	height: 120px;
+	left: 50%;
+	margin-left: -1450px;
+	box-shadow: 0px 8px 8px black;
+	background-color: white;
+}
+
+#back-right1 {
+	position: fixed;
+	width: 1000px;
+	height: 120px;
+	left: 50%;
+	margin-left: 450px;
+	box-shadow: 0px 8px 8px black;
+	background-color: white;
+}
+
+#front2 {
+	position: fixed;
+	top: 100px;
+	margin-left: -475px;
+	left: 50%;
+	width: 950px;
+	height: 40px;
+	background-color: maroon;
+	box-shadow: 0px 8px 8px black;
+	display: flex;
+}
+
+#triangle-left2 {
+	top: 140px;
+	left: 50%;
+	margin-left: -475px;
+	position: fixed;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 26px 20px 0;
+	border-color: transparent black transparent transparent;
+}
+
+#triangle-right2 {
+	position: fixed;
+	top: 140px;
+	left: 50%;
+	margin-left: 450px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 25px 0 0;
+	border-color: black transparent transparent transparent;
+}
+
+#back-left2 {
+	position: fixed;
+	width: 1000px;
+	height: 40px;
+	top: 120px;
+	left: 50%;
+	margin-left: -1450px;
+	box-shadow: 0px 8px 8px black;
+	background-color: maroon;
+}
+
+#back-right2 {
+	position: fixed;
+	width: 1000px;
+	height: 40px;
+	top: 120px;
+	left: 50%;
+	margin-left: 450px;
+	box-shadow: 0px 8px 8px black;
+	background-color: maroon;
+}
+
+#front3 {
+	position: fixed;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -475px;
+	width: 950px;
+	height: 25px;
+	background-color: maroon;
+	box-shadow: 0px -8px 8px black;
+}
+
+#triangle-left3 {
+	bottom: 25px;
+	left: 50%;
+	margin-left: -475px;
+	position: fixed;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 20px 26px;
+	border-color: transparent transparent black transparent;
+}
+
+#triangle-right3 {
+	position: fixed;
+	bottom: 25px;
+	left: 50%;
+	margin-left: 450px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 20px 0 0 25px;
+	border-color: transparent transparent transparent black;
+}
+
+#back-left3 {
+	position: fixed;
+	width: 50%;
+	height: 45px;
+	bottom: 0;
+	margin-left: -450px;
+	box-shadow: 0px -8px 8px black;
+	background-color: maroon;
+}
+
+#back-right3 {
+	position: fixed;
+	width: 50%;
+	height: 45px;
+	bottom: 0;
+	left: 50%;
+	margin-left: 450px;
+	box-shadow: 0px -8px 8px black;
+	background-color: maroon;
+}
+
+#reseaux_nav {
+	top: 160px;
+	left: 50%;
+	margin-left: -650px;
+	position: fixed;
+	background-color: white;
+	width: 165px;
+	height: 200px;
+	text-align: center;
+	box-shadow: 0px 8px 8px black;
+}
+
+#reseaux_nav p{
+	margin-bottom: 8px;
+	margin-top: 15px;
+	font-family: Mr_Sunshine_2;
+	font-size: 30px;
+	color: darkred;	
+}
+
+#youtube {
+	margin-left: 15px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	background: url(images/YouTube.png) -60px 0 no-repeat;
+	transition: all 0.5s ease;
+}
+
+#youtube:hover {
+	background: url(images/YouTube.png) 0px 0 no-repeat;
+	transition: all 0.5s ease;
+}
+
+#facebook {
+	margin-left: 5px;
+	margin-right: 15px;
+	margin-bottom: 5px;
+	background: url(images/facebook.png) -60px 0 no-repeat;
+	transition: all 0.5s ease;
+}
+
+#facebook:hover {
+	background: url(images/facebook.png) 0px 0 no-repeat;
+	transition: all 0.5s ease;
+}
+
+#twitter {
+	margin-left: 15px;
+	margin-right: 5px;
+	margin-top: 5px;
+	background: url(images/twitter.png) -60px 0 no-repeat;
+	transition: all 0.5s ease;
+}
+
+#twitter:hover {
+	background: url(images/twitter.png) 0px 0 no-repeat;
+	transition: all 0.5s ease;
+}
+
+#instagram {
+	margin-left: 5px;
+	margin-right: 15px;
+	margin-top: 5px;
+	background: url(images/instagram.png) -60px 0 no-repeat;
+	transition: all 0.5s ease;
+}
+
+#instagram:hover {
+	background: url(images/instagram.png) 0px 0 no-repeat;
+	transition: all 0.5s ease;
+}
+
+#copyright {
+	font-family: Mr_Sunshine_2;
+	font-size: 20px;
+	position: fixed;
+	bottom: -25px;
+	left: 50%;
+	margin-left: -465px;
+}
+
+#spoiler h2 {
+	font-family: Mr_Sunshine_2;
+	font-size: 35px;
+}
+
+#spoiler_bouton {
+	font-family: Mr_Sunshine_2;
+	font-size: 25px;
+	padding-top: 5px;
+	border-radius: 10px;
+	margin-left: 160px;
+	margin-top: 15px;
+}
+
+#spoiler_bouton:hover {
+	border: 2px solid black;
+}
+
+#lecteur {
+	width: 630px;
+	margin-top: 15px;
+}
+
+.reseaux {
+	color: RGBa(0, 0, 0, 0);
+	display: inline-block;
+	width: 60px;
+	height: 60px;
+	background-color: whitesmoke;
+}
+
+.liens {
+	height: 40px;
+	text-align: center;
+	line-height: 50px;
+	text-decoration: none;
+	font-family: Mr_Sunshine_2;
+	font-size: 28px;
+	flex: 1;
+	color: black;
+}
+
+.liens:hover {
+	color: white;
+	background-color: brown;
+	transition: all 1s ease;
+}
+
+.bouton_lecteur {
+	font-family: Mr_Sunshine_2;
+	font-size: 22px;
+	width: 200px;
+	margin: 5px;
+	padding-top: 5px;
+	border-radius: 10px;
+}
+
+.bouton_lecteur:hover {
+	border: 2px solid black;
+}

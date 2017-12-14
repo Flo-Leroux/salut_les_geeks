@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SLG : Commentaire</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="style_commentaire.css">
+		<script>
+			function commentaire(nom, mess) {
+				document.getElementById("dynamique").innerHTML += '<div class="titre_commentaire"><div class="identifiant_commentaire"><p>' + nom + '</p></div><div class="commentaire_commentaire"><p>' + mess + '</p></div></div>';
+			}
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav id="reseaux_nav">
+				<p>Suivez-moi !</p>
+				<a class="reseaux" id="youtube" href="https://www.youtube.com/user/Salutlesgeeks">Youtube</a>
+				<a class="reseaux" id="facebook" href="https://www.facebook.com/SalutlesGeeks/">Facebook</a>
+				<a class="reseaux" id="twitter" href="https://twitter.com/Mathieu_Sommet">Twitter</a>
+				<a class="reseaux" id="instagram" href="https://www.instagram.com/mathieuslg/">Instagram</a>
+			</nav>
+			<div id="back-left1"></div>
+			<div id="back-right1"></div>
+			<div id="back-left2"></div>
+			<div id="back-right2"></div>
+			<div id="front1">
+				<h1 class="titre">Salut les Geeks</h1>
+			</div>	
+			<nav>
+				<div id="triangle-left2"></div>
+				<div id="triangle-right2"></div>
+				<div id="front2">
+					<a class="liens" href="index.html">Accueil</a>
+					<a class="liens" href="biographie.html">Biographie</a>
+					<a class="liens" href="personnages.html">Personnages</a>
+					<a class="liens" href="galerie.html">Galerie</a>
+					<a class="liens" href="fanclub.html">Fan Club</a>
+					<a class="liens" href="commentaires.html">Commentaires</a>
+				</div>
+			</nav>
+		</header>
+		<section id="page">
+			<h1>Commentaire</h1>
+			<article>
+				<div class="titre">
+					<div class="identifiant">
+						<p>Identifiant</p>
+					</div>
+					<div class="commentaire">
+						<p>Commentaire</p>
+					</div>
+				</div>
+				<form name="contact">
+					<input type="text" name="nom" />
+					<textarea name="message"></textarea>
+					<button type="reset" onClick="javascript:commentaire(document.forms['contact'].elements['nom'].value,
+																		document.forms['contact'].elements['message'].value)">
+																		Publier commentaire</button>
+				</form>
+			</article>
+			<article id="dynamique">
+				<div class="titre">
+					<div class="identifiant">
+						<p>Identifiant</p>
+					</div>
+					<div class="commentaire">
+						<p>Commentaire</p>
+					</div>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<div id="back-left3"></div>
+			<div id="back-right3"></div>
+			<div id="front3">
+				<p id="copyright">Copyright Leroux Florian - Germain Brice</p>
+			</div>
+			<div id="triangle-left3"></div>
+			<div id="triangle-right3"></div>
+		</footer>
+	</body>
+</html>

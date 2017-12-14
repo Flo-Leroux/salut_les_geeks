@@ -1,0 +1,38 @@
+@font-face {
+	font-family: 'Mr_Sunshine_2';
+	src: url('Mr_Sunshine_2.ttf');
+}
+
+#centrer {
+	padding-left: 30px;
+	padding-top: 60px;
+}
+
+.galerie {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background-color: black;
+	text-align: center;
+	margin: 30px;
+	transition: all 0.5s ease;
+	border: 4px solid RGBa(255, 255, 255, 0.5);
+}
+
+.galerie:hover {
+	border: 4px solid RGBa(255, 255, 255, 1);
+	transition: all 0.5s ease;
+}
+
+.galerie img {
+	max-width: 200px;
+	max-height: 200px;
+	vertical-align: middle;
+}
+
+.galerie a {
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	text-align: middle;
+}
